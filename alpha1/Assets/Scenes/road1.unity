@@ -1772,7 +1772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  zombieDmg: 52
+  zombieDmg: 0
 --- !u!1 &1968220840
 GameObject:
   m_ObjectHideFlags: 0

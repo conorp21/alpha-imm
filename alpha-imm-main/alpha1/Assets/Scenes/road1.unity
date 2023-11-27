@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1351,6 +1351,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 905922913945525487, guid: 0574dcbe8faa1eb41bf8e35c0be29c0d, type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 905922913945525487, guid: 0574dcbe8faa1eb41bf8e35c0be29c0d, type: 3}
       propertyPath: bulletDmg
       value: 10
       objectReference: {fileID: 0}
@@ -1655,6 +1659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f4dcbda128b334893bd3fe7dd7cd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartButton: {fileID: 1545959114}
 --- !u!114 &1545959114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1957,8 +1962,8 @@ GameObject:
   - component: {fileID: 1782651190}
   - component: {fileID: 1782651189}
   - component: {fileID: 1782651188}
-  - component: {fileID: 1782651193}
   - component: {fileID: 1782651194}
+  - component: {fileID: 1782651195}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -2053,28 +2058,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782651187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.42, y: 1.5, z: 3.17}
+  m_LocalPosition: {x: 3.42, y: 1.71, z: 3.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1782651193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782651187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f54f3bfbfbdc764b92b150f6ad31519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 4700985308072077541, guid: 31cc357b07922694192063dceb5f3523, type: 3}
-  speed: 5
-  spawnOffset: -0.5
 --- !u!114 &1782651194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2088,7 +2078,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  zombieDmg: 52
+  zombieDmg: 0
+--- !u!114 &1782651195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782651187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f54f3bfbfbdc764b92b150f6ad31519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 4700985308072077541, guid: 31cc357b07922694192063dceb5f3523, type: 3}
+  speed: 5
+  spawnOffset: 10
 --- !u!1 &1913904874
 GameObject:
   m_ObjectHideFlags: 0

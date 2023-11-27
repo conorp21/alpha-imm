@@ -6,7 +6,7 @@ public class playerController : MonoBehaviour
 {
     public GameObject projectilePrefab;
     public float speed = 5.0f;
-    public float spawnOffset = 10f; // Offset distance from the player
+    public float spawnOffset = 10f; 
 
     // Update is called once per frame
     void Update()

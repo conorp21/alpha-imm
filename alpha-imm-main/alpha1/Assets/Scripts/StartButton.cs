@@ -1,26 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class NewBehaviourScript : MonoBehaviour
+public class StartButton : MonoBehaviour
 {
+    public Button startButton; // Reference to the Button component
 
-    public Button StartButton;
-
-    // Start is called before the first frame update
     void Start()
     {
-        //Adding listener to the button click event 
-        StartButton.onClick.addListener(StartGame);
+        // Adding a listener to the button click event 
+        startButton.onClick.AddListener(StartGame);
     }
 
-    // Update is called once per frame
-    void Update()
+    // Method to handle the button click
+    void StartGame()
     {
-        //Adding my start code to the game here
-        Debug.log("Game Satrted!!");
-        
+        Debug.Log("Game Started!!");
+        // Add your game start logic here
     }
 }

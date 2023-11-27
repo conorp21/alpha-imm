@@ -29,7 +29,7 @@ public class enemy : MonoBehaviour
 
         if(transform.position.y < -15)
         {
-            Destroy(GameObject);
+            Destroy(gameObject);
         }
         
     }
